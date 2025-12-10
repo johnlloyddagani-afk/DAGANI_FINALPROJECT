@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="projects" class="section"></section>
+
+<div id="loading-screen">
+    <div class="loading-circle"></div>
+</div>
+
+<div class="navbar">
+    <a href="#" onclick="goTo('home.html')">Home</a>
+    <a href="#" onclick="goTo('about.html')">About Me</a>
+    <a href="#" onclick="goTo('projects.html')">Projects</a>
+    <a href="#" onclick="goTo('contact.html')">Contact</a>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="section">
+    <h1>My Projects </h1>
+
+    <!-- TEXT FIRST — CLICK TO OPEN IMAGE -->
+    <div class="project-desc" onclick="openProject(1)">
+        ✧ Project 1 —  Python Factorial Program
+    </div>
+
+    <div class="project-desc" onclick="openProject(2)">
+        ✧ Project 2 — Java Product Class with Array of Products
+    </div>
+
+    <div class="project-desc" onclick="openProject(3)">
+        ✧ Project 3 — Java Factorial Program Using Methods
+    </div>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-box">
+        <span class="close-btn" onclick="closeProject()">×</span>
+        <img id="modal-img">
+        <p id="modal-desc"></p> <!-- description placed here -->
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
